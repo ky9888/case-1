@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="flex bg-black h-[60px] w-full text-white justify-between">
+       
+        <div class="flex items-center  ">
+            <ul class="flex space-x-4  ">
+            <li id="demo" >Trang chủ</li>
+            <li id="demo">Giới thiệu</li>
+            <li id="demo">Bài viết</li>
+            <li id="demo">Liên lạc</li>
+            </ul>
+        </div>
+        
+        <div class="flex items-center space-x-4  ">
+            <input type="text" placeholder="Tìm kiếm">
+            <a  href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </header>
+    <section >
+        <div>
+            <h1>Ví dụ thao tác Javasrcipt với HTML,CSS</h1>
+            <p>Nội dung đang cập nhập...</p>
+        </div>
+        <div class="flex space-x-10">
+         <button  class="h-[30px] w-[100px] bg-black text-white"  id="demo1">Đăng nhập</button>
+        <button class="h-[30px] w-[100px] bg-black text-white"   id="md2">Add staff</button>
+        <button class="h-[30px] w-[500px] bg-black text-white" onclick="ReviewStaff()" id="ReView">Review the staff you just added</button>
+        </div>
+    </section>
+    <main id="modal" class="bg-black/30 h-screen w-full fixed top-0 left-0 hidden ">
+        <div class=" bg-gray-400  h-[500px] w-[50%] mt-[5%] ml-[25%] mr-25%  ">
+            <header class="flex justify-center bg-white h-[50%]">
+                <img class="h-[200px] rounded-full"
+        src="https://www.w3schools.com/howto/img_avatar2.png"
+        alt="Avatar"
+        class="avatar"
+      />
+            </header>
+            <div class="p-[10px]">
+                <main  >
+                    <div>
+                        <label for="label">Tên đăng nhập</label> <br>
+                    <input class="w-full"  type="text" placeholder="nhập tài khoản" required><br>
+                    </div>
+                    <div >
+                        <label for="label">Mật khẩu</label><br>
+                    <input class="w-full" type="text" placeholder="nhập mật khẩu" required><br>
+                    </div>
+                    <div>
+                        <button   >Đăng nhập</button>
+                        <input type="checkbox">
+                        <label for="">nhớ tài khoản</label>
+                    </div>
+                   
+    
+                </main>
+                <footer class="mt-[80px]  flex justify-between" >
+                    <div >
+                        <button id="demo2">Hủy bỏ</button>
+                      
+                    </div>
+                    <div>  quên <a href="#">mật khẩu ?</a></div>
+                </footer>
+            </div>
+          
+           
+        </div>
+
+    </main>
+    <main id="modal2" class=" hidden   bg-black/30 h-screen w-full fixed top-0 left-0  ">
+        <div class=" bg-gray-400  h-[400px] w-[40%] mt-[5%] ml-[35%] mr-25% space-y-4  ">
+           <h1>more company employees</h1>
+           <div>
+            <label for="">ID:</label>
+            <input type="number" id="id">
+           </div>
+           <div>
+            <label for="">FullName:</label>
+            <input type="text" id="FullName">
+           </div>
+           <div>
+            <label for="">baseSalary:</label>
+            <input type="number" id="baseSalary">
+           </div>
+           <div>
+            <label for="">productSalary:</label>
+            <input type="number" id="productSalary">
+           </div>
+           <div>
+            <label for="">productQuantity:</label>
+            <input type="number" id="productQuantity">
+           </div>
+           <div class="flex space-x-10">
+            <div>
+                <button id="confirm" onclick="abc()">confirm</button>
+               </div>
+               <div>
+                <button id="close" >close</button>
+                
+               </div>
+               <div>
+                <button  onclick="" id="Output-staff"><a href="#">Export the list of added employees</a></button></button>
+    
+               </div>
+           </div>
+
+        </div>
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
